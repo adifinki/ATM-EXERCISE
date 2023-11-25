@@ -8,13 +8,12 @@ def login() -> str:
     This function asks the user for his customer ID and password
     """
     target_id = None
-    with open("customers.json", 'r') as customers_file:
-        customers_data = json.load(customers_file)
-        while target_id not in customers_data:
-            target_id = input("Enter valid customer ID")
-        password = None
-        while customers_data[target_id]["password"] != password:
-            password = input("Enter your password")
+    customers_data = get_customers_data()
+    while target_id not in customers_data:
+        target_id = input("Enter valid customer ID")
+    password = None
+    while customers_data[target_id]["password"] != password:
+        password = input("Enter your password")
     return target_id
 
 
