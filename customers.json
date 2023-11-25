@@ -1,19 +1,14 @@
 {
-    "customers": [
-        {
-            "customer_id": 0,
-            "password": 2023,
-            "balance": 155
-        },
-        {
-            "customer_id": 1,
-            "password": 123,
-            "balance": 15
-        },
-        {
-            "customer_id": 2,
-            "password": 123,
-            "balance": 15
-        }
-    ]
+    "0": {
+        "password": "22",
+        "balance": 104
+    },
+    "1": {
+        "password": "123",
+        "balance": 15
+    },
+    "2": {
+        "password": "123",
+        "balance": 15
+    }
 }
